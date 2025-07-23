@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Header from '../components/layout/Header';
-import Card from '../components/common/Card';
+import Card from '..@/components/common/Card';
 import PostModal from '../components/common/PostModal';
 import { PostData } from '../interfaces';
-import home @/components/common/Card
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

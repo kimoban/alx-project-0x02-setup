@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "../components/layout/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,9 +14,11 @@ const geistMono = Geist_Mono({
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
+    <div>
+      <Header />
+      <div
+        className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
+      >
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -29,7 +32,7 @@ export default function Home() {
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              pages/index.tsx
+              Welcome to <span className="text-foreground">alx-project-0x02</span>
             </code>
             .
           </li>
@@ -110,6 +113,7 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import PostCard from '../components/common/PostCard';
 import { PostProps } from '../interfaces';
-import { GetStaticProps } from 'next';
+import { getStaticProps } from 'next';
 
 const Posts = () => {
   const [posts, setPosts] = useState<PostProps[]>([]);

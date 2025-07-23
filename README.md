@@ -12,7 +12,6 @@ This is a modern Next.js application built with TypeScript and Tailwind CSS, fea
 
 ## Project Structure
 
-```
 alx-project-0x02/
 ├── components/
 │   ├── common/
@@ -27,7 +26,7 @@ alx-project-0x02/
 │   └── index.ts                # TypeScript interfaces
 ├── pages/
 │   ├── _app.tsx               # Next.js app component
-│   ├── _document.tsx          # Next.js document component
+│   ├──_document.tsx          # Next.js document component
 │   ├── index.tsx              # Home page
 │   ├── about.tsx              # About page with button showcase
 │   ├── home.tsx               # Home page with cards and post modal
@@ -35,23 +34,49 @@ alx-project-0x02/
 │   └── users.tsx              # Users page with API data
 └── styles/
     └── globals.css            # Global styles
-```
+
+alx-project-0x02/
+├── components/
+│   ├── common/
+│   │   ├── Button.tsx          # Reusable button component
+│   │   ├── Card.tsx            # Card component for content display
+│   │   ├── PostCard.tsx        # Component for displaying posts
+│   │   ├── PostModal.tsx       # Modal for creating posts
+│   │   └── UserCard.tsx        # Component for displaying user info
+│   └── layout/
+│       └── Header.tsx          # Navigation header component
+├── interfaces/
+│   └── index.ts                # TypeScript interfaces
+├── pages/
+│   ├── _app.tsx               # Next.js app component
+│   ├──_document.tsx          # Next.js document component
+│   ├── index.tsx              # Home page
+│   ├── about.tsx              # About page with button showcase
+│   ├── home.tsx               # Home page with cards and post modal
+│   ├── posts.tsx              # Posts page with API data
+│   └── users.tsx              # Users page with API data
+└── styles/
+    └── globals.css            # Global styles
 
 ## Components
 
 ### Button Component
+
 - **Props**: size (small, medium, large), shape (rounded-sm, rounded-md, rounded-full), variant (primary, secondary, outline)
 - **Features**: Hover effects, focus states, disabled states
 
 ### Card Component
+
 - **Props**: title, content, isUserCreated (optional)
 - **Features**: Shadow effects, hover animations, user-created badge
 
 ### PostCard Component
+
 - **Props**: id, title, body, userId
 - **Features**: Post metadata display, character truncation, read more functionality
 
 ### UserCard Component
+
 - **Props**: User object with name, email, phone, website, address, company
 - **Features**: Comprehensive user information display, responsive layout
 
@@ -66,34 +91,39 @@ alx-project-0x02/
 ## API Integration
 
 The application integrates with [JSONPlaceholder](https://jsonplaceholder.typicode.com/) for demo data:
+
 - **Posts**: `/posts` endpoint for blog-style content
 - **Users**: `/users` endpoint for user information
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn package manager
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/kimoban/alx-project-0x02-setup.git
 cd alx-project-0x02-setup
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```bash
 npm install
 ```
 
-3. Run the development server:
+1. Run the development server:
+
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+1. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ### Available Scripts
 

@@ -15,25 +15,25 @@ This is a modern Next.js application built with TypeScript and Tailwind CSS, fea
 alx-project-0x02/  
 ├── components/  
 │   ├── common/  
-│   │   ├── Button.tsx            # Reusable button component
-│   │   ├── Card.tsx              # Card component for content display
-│   │   ├── PostCard.tsx          # Component for displaying posts
-│   │   ├── PostModal.tsx         # Modal for creating posts
-│   │   └── UserCard.tsx          # Component for displaying user info
-│   └── layout/
-│       └── Header.tsx            # Navigation header component
-├── interfaces/
-│   └── index.ts                  # TypeScript interfaces
-├── pages/
-│   ├── _app.tsx                 # Next.js app component
-│   ├──_document.tsx             # Next.js document component
-│   ├── index.tsx                # Home page
-│   ├── about.tsx                # About page with button showcase
-│   ├── home.tsx                 # Home page with cards and post modal
-│   ├── posts.tsx                # Posts page with API data
-│   └── users.tsx                # Users page with API data
-└── styles/
-    └── globals.css              # Global styles
+│   │   ├── Button.tsx            # Reusable button component  
+│   │   ├── Card.tsx              # Card component for content display  
+│   │   ├── PostCard.tsx          # Component for displaying posts  
+│   │   ├── PostModal.tsx         # Modal for creating posts  
+│   │   └── UserCard.tsx          # Component for displaying user info  
+│   └── layout/  
+│       └── Header.tsx            # Navigation header component  
+├── interfaces/  
+│   └── index.ts                  # TypeScript interfaces  
+├── pages/  
+│   ├── _app.tsx                 # Next.js app component  
+│   ├──_document.tsx             # Next.js document component  
+│   ├── index.tsx                # Home page  
+│   ├── about.tsx                # About page with button showcase  
+│   ├── home.tsx                 # Home page with cards and post modal  
+│   ├── posts.tsx                # Posts page with API data  
+│   └── users.tsx                # Users page with API data  
+└── styles/  
+    └── globals.css              # Global styles  
 
 ## Components
 

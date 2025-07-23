@@ -1,5 +1,7 @@
 # ALX Project 0x02 - Next.js Application
 
+## Next.js Project Setup and Basics
+
 This is a modern Next.js application built with TypeScript and Tailwind CSS, featuring component-based architecture and API integration.
 
 ## Features

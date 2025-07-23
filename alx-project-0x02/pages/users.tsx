@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/layout/Header';
 import UserCard from '../components/common/UserCard';
 import { UserProps } from '../interfaces';
-import {getStaticProps()} from next;
+import {getStaticProps()} from 'next';
 
 const Users = () => {
   const [users, setUsers] = useState<UserProps[]>([]);
